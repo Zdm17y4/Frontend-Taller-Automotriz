@@ -1,46 +1,56 @@
-function Navbar(){
+function Navbar() {
     return (
-        <nav>
-            <ul>
-                <li>PLANCHADO Y PINTURA
-                    <ul>
-                        <li>PLANCHADO Y PINTURA PAÑOS</li>
-                        <li>TRATAMIENTO DE PINTURA</li>
-                        <li>REPARACION Y PINTURA DE AROS</li>
-                        <li>PINTURA EXPRESS</li>
+        <nav className="navbar">
+            <ul className="nav-menu">
+                <li className="nav-item">
+                    <button>Home</button>
+                </li>
+
+                <li className="nav-item">
+                    <button>PLANCHADO Y PINTURA</button>
+                    <ul className="dropdown">
+                        <li><button>PLANCHADO Y PINTURA PAÑOS</button></li>
+                        <li><button>TRATAMIENTO DE PINTURA</button></li>
+                        <li><button>REPARACION Y PINTURA DE AROS</button></li>
+                        <li><button>PINTURA EXPRESS</button></li>
                     </ul>
                 </li>
-                <li>ELECTROMOVILIDAD
-                    <ul>
-                        <li>VENTA DE VEHICULOS NUEVOS</li>
+
+                <li className="nav-item">
+                    <button>ELECTROMOVILIDAD</button>
+                    <ul className="dropdown">
+                        <li><button>VENTA DE VEHICULOS NUEVOS</button></li>
                     </ul>
                 </li>
-                <li>MECÁNICA
-                    <ul>
-                        <li>INSPECCION Y DIAGNÓSTICO</li>
-                        <li>SERVICIO DE MANTENIMIENTOS</li>
-                        <li>FRENOS</li>
-                        <li>SUSPENSION Y DIRECCIÓN</li>
-                        <li>SISTEMA DE REFRIGERACIÓN</li>
-                        <li>ELECTRICIDAD Y ELECTRÓNICA</li>
-                        <li>AIRE ACONDICIONADO</li>
-                        <li>REPARACIÓN DE MOTORES</li>
+
+                <li className="nav-item">
+                    <button>MECÁNICA</button>
+                    <ul className="dropdown">
+                        <li><button>INSPECCION Y DIAGNÓSTICO</button></li>
+                        <li><button>SERVICIO DE MANTENIMIENTOS</button></li>
+                        <li><button>FRENOS</button></li>
+                        <li><button>SUSPENSION Y DIRECCIÓN</button></li>
+                        <li><button>SISTEMA DE REFRIGERACIÓN</button></li>
+                        <li><button>ELECTRICIDAD Y ELECTRÓNICA</button></li>
+                        <li><button>AIRE ACONDICIONADO</button></li>
+                        <li><button>REPARACIÓN DE MOTORES</button></li>
                     </ul>
                 </li>
-                <li>PLANCHADO
-                    <ul>
-                        <li>PLANCHADO Y PINTURA PAÑOS</li>
-                        <li>TRATAMIENTO DE PINTURA</li>
-                        <li>REPARACION Y PINTURA DE AROS</li>
-                        <li>PINTURA EXPRESS</li>
+
+                <li className="nav-item">
+                    <button>LOCALES</button>
+                    <ul className="dropdown">
+                        <li><button>LOCALES PREMIUM</button></li>
+                        <li><button>SURQUILLO</button></li>
+                        <li><button>LOCALES MULTIMARCA</button></li>
+                        <li><button>SURQUILLO</button></li>
+                        <li><button>SAN LUIS</button></li>
+                        <li><button>LA MOLINA</button></li>
                     </ul>
                 </li>
             </ul>
-
-            <div>
-                <span>WHATSAPP</span>
-                <strong>977123233</strong>
-            </div>
         </nav>
-    )
+    );
 }
+
+export default Navbar;
