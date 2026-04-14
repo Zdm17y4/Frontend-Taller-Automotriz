@@ -1,0 +1,23 @@
+.valueprops-section {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.valueprops-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.valueprops-item{
+    color: #9e9e9e;
+
+}
+.valueprops-item img{
+    height: 400px;
+    width: 350px;
+    color: #9e9e9e;
+}
