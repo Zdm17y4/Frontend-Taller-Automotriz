@@ -1,5 +1,8 @@
 import Carousel from "./Carousel";
 import Navbar from "./Navbar";
+import Features from "./Features";
+import Recognitions from "./Recognitions";
+import ValueProps from "./ValueProps";
 
 function App() {
   const carouselItems = [
@@ -21,6 +24,9 @@ function App() {
       <Navbar />
       <Carousel
         items={carouselItems} />
+      <Features />
+      <Recognitions />
+      <ValueProps />
     </div>
   );
 }
