@@ -1,0 +1,37 @@
+.recognitions-section {
+    background-color: white;
+    padding: 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.recognitions-section h3{
+    color: #9e9e9e;
+    margin-bottom: 60px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
+.recognitions-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recognitions-item {
+    color: #989898;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    font-size: smaller;
+}
+.recognitions-item img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 20px;
+}
