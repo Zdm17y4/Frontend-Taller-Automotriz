@@ -1,0 +1,124 @@
+.footer-section {
+    background-color: #84878a;
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.footer-top h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    /* Línea divisoria superior */
+    padding: 40px 0;
+}
+
+.locations-block {
+    flex: 1;
+}
+
+.multimarca-block {
+    flex: 2;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 40px;
+    margin-left: 40px;
+}
+
+.block-title {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.multimarca-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.location-item {
+    text-align: center;
+}
+
+.location-item .icon-marker {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.location-item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 40px;
+}
+
+.info-column h4 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.info-column p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0 0 5px 0;
+}
+
+.indent-time {
+    padding-left: 125px;
+    /* Para alinear la segunda línea del horario */
+}
+
+.info-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-column ul li {
+    margin-bottom: 8px;
+}
+
+.info-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.info-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.tow-truck-column {
+    text-align: center;
+}
+
+.tow-truck-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
