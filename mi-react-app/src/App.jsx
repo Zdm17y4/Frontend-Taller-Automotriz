@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import Features from "./Features";
 import Recognitions from "./Recognitions";
 import ValueProps from "./ValueProps";
+import Footer from "./Footer";
+import Quality from "./Quality";
 
 function App() {
   const carouselItems = [
@@ -27,6 +29,8 @@ function App() {
       <Features />
       <Recognitions />
       <ValueProps />
+      <Quality />
+      <Footer />
     </div>
   );
 }
