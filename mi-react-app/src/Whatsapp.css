@@ -1,0 +1,65 @@
+#btn-whatsapp-consulta {
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 5px 6px;
+    text-decoration: none;
+    z-index: 999;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    min-width: 180px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn-whatsapp-consulta:hover {
+    background-color: #1cb731;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#btn-whatsapp-consulta:hover b,
+#btn-whatsapp-consulta:hover span,
+#btn-whatsapp-consulta:hover i {
+    color: #ffffff;
+}
+
+.whatsapp-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: center;
+}
+
+#btn-whatsapp-consulta b {
+    color: #8e8e8e;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+#btn-whatsapp-consulta i {
+    font-size: 24px;
+    display: none;
+}
+
+#btn-whatsapp-consulta img {
+    height: 60px;
+    width: 60px;
+    display: block;
+}
+
+#btn-whatsapp-consulta span {
+    color: #8e8e8e;
+    font-size: 25px;
+    font-weight: 800;
+}
