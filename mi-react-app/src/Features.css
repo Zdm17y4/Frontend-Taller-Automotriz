@@ -32,6 +32,7 @@
     height: 100px;
     width: auto;
     margin-bottom: 20px;
+    filter: hue-rotate(220deg) saturate(1.2) brightness(0.6) contrast(1.1);
 }
 
 .feature-item p {
