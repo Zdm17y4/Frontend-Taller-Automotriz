@@ -10,7 +10,7 @@
 }
 
 .quality-grid img {
-    height: 80px;
+    height: 110px;
     width: auto;
     margin-bottom: 20px;
     object-fit: contain;
@@ -18,7 +18,7 @@
 
 .quality-premium {
     padding: 80px 20px 100px 20px;
-    background-color: #1a1a1a;
+    background-color: #000000;
     color: white;
 }
 

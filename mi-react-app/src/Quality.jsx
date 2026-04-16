@@ -1,4 +1,7 @@
 import React from "react";
+import logoTaller from './assets/logos/logoTaller.png';
+import logoTallerPremium from './assets/logos/logoTallerPremium.png';
+
 import './Quality.css'
 
 const Quality = () => {
@@ -6,7 +9,7 @@ const Quality = () => {
         <section className="quality-section">
             <div className="quality-grid">
                 <div className="quality-premium">
-                    <img src="https://www.cocacolaep.com/assets/legacy-assets/Uploads/resources/Coca-Cola-1210__FocusFillWyIwLjAwIiwiMC4wMCIsMTM3Niw1MzJd.jpg" alt="logo-premium" />
+                    <img src={logoTallerPremium} alt="logo-premium" />
                     <h2>AUTOS Y CAMIONETAS DE ALTA GAMA</h2>
                     <div className="list-container">
                         <ul>
@@ -19,7 +22,7 @@ const Quality = () => {
                 </div>
 
                 <div className="quality-normal">
-                    <img src="https://www.cocacolaep.com/assets/legacy-assets/Uploads/resources/Coca-Cola-1210__FocusFillWyIwLjAwIiwiMC4wMCIsMTM3Niw1MzJd.jpg" alt="logo-normal" />
+                    <img src={logoTaller} alt="logo-normal" />
                     <h2>AUTOS Y CAMIONETAS MULTIMARCA</h2>
                     <div className="quality-normal-grid">
                         <div className="list-column">
