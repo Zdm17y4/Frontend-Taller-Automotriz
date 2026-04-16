@@ -5,33 +5,47 @@ import Recognitions from "./Recognitions";
 import ValueProps from "./ValueProps";
 import Footer from "./Footer";
 import Quality from "./Quality";
+import Whatsapp from "./Whatsapp";
+import Copyright from "./Copyright";
+
+
+import lamboUrus from './assets/images/lamboUrus.png'
+import calidad from './assets/images/calidad.png'
+import mecanico from './assets/images/mecanico.png'
 
 function App() {
   const carouselItems = [
-    <div style={{ background: '#ff6b6b', padding: '100px' }}>
-      <h2>Servicio de Planchado y Pintura</h2>
-      <p>Calidad profesional</p>
-    </div>,
-    <div style={{ background: '#4ecdc4', padding: '100px' }}>
-      <h2>Electromovilidad</h2>
-      <p>Vehículos del futuro</p>
-    </div>,
-    <div style={{ background: '#45b7d1', padding: '100px' }}>
-      <h2>Mecánica Especializada</h2>
-      <p>Diagnóstico preciso</p>
-    </div>,
+    {
+      image: calidad,
+      title: "Servicio de Planchado y Pintura",
+      subtitle: "Calidad profesional"
+    },
+    {
+      image: lamboUrus,
+      title: "Electromovilidad",
+      subtitle: "Vehículos del futuro"
+    },
+    {
+      image: mecanico,
+      title: "Mecánica Especializada",
+      subtitle: "Diagnóstico preciso"
+    },
   ];
   return (
-    <div>
-      <Navbar />
-      <Carousel
-        items={carouselItems} />
-      <Features />
-      <Recognitions />
-      <ValueProps />
-      <Quality />
-      <Footer />
-    </div>
+    <>
+      <div>
+        <Navbar />
+        <Carousel
+          items={carouselItems} />
+        <Features />
+        <Recognitions />
+        <ValueProps />
+        <Quality />
+        <Footer />
+        <Copyright />
+      </div>
+      <Whatsapp />
+    </>
   );
 }
 
