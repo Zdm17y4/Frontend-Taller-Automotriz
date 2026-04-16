@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
-
+import localitation from './assets/icon/localitation.png'
+import crane from './assets/icon/crane.png'
 const Footer = () => {
     return (
         <footer className="footer-section">
@@ -8,7 +9,7 @@ const Footer = () => {
 
                 {/* --- PARTE SUPERIOR: CENTRAL --- */}
                 <div className="footer-top">
-                    <h2>CENTRAL - 9XX XXX XXX</h2>
+                    <h2>CENTRAL - 974 297 933</h2>
                 </div>
 
                 {/* --- PARTE MEDIA: LOCALES --- */}
@@ -17,10 +18,13 @@ const Footer = () => {
                     <div className="locations-block premium-block">
                         <h3 className="block-title">TALLER PREMIUM</h3>
                         <div className="location-item">
-                            <span className="icon-marker">📍</span> {/* Reemplazar con tu ícono */}
-                            <p>Surquillo</p>
-                            <p>9XX XXX XXX</p>
-                            <p>-</p>
+                            <span className="icon-marker">
+                                <a href="">
+                                    <img src={localitation} alt="ubicacion" />
+                                </a>
+                            </span>
+                            <p>Independencia</p>
+                            <p>974 297 933</p>
                         </div>
                     </div>
 
@@ -29,22 +33,35 @@ const Footer = () => {
                         <h3 className="block-title">TALLERES MULTIMARCA</h3>
                         <div className="multimarca-grid">
                             <div className="location-item">
-                                <span className="icon-marker">📍</span>
-                                <p>Surquillo.</p>
-                                <p>9XX XXX XXX</p>
-                                <p>-</p>
+                                <span className="icon-marker">
+                                    <a href="https://maps.app.goo.gl/PBuE7rvQVFg6oRVR6">
+                                        <img src={localitation} alt="ubicacion" />
+                                    </a>
+                                </span>
+                                <p>Independencia.</p>
+                                <p>974 297 933</p>
                             </div>
                             <div className="location-item">
-                                <span className="icon-marker">📍</span>
-                                <p>San Luis</p>
-                                <p>9XX XXX XXX</p>
-                                <p>-</p>
+                                <span className="icon-marker">
+                                    <a href="https://maps.app.goo.gl/qoiNzYzFQQoTxmwT8">
+                                        <a href="">
+                                            <img src={localitation} alt="ubicacion" />
+                                        </a>
+                                    </a>
+                                </span>
+                                <p>San Juan de Lurigancho</p>
+                                <p>974 297 933</p>
                             </div>
                             <div className="location-item">
-                                <span className="icon-marker">📍</span>
-                                <p>La Molina</p>
-                                <p>9XX XXX XXX</p>
-                                <p>-</p>
+                                <span className="icon-marker">
+                                    <a href="https://maps.app.goo.gl/vy2L5q3EobtMtued7">
+                                        <a href="">
+                                            <img src={localitation} alt="ubicacion" />
+                                        </a>
+                                    </a>
+                                </span>
+                                <p>Barranco</p>
+                                <p>974 297 933</p>
                             </div>
                         </div>
                     </div>
@@ -78,7 +95,7 @@ const Footer = () => {
                     <div className="info-column tow-truck-column">
                         <h4>GRÚA</h4>
                         <div className="tow-truck-icon">
-                            🚚
+                            <img src={crane} alt="crane-icon" />
                         </div>
                         <p>Servicio de grúa</p>
                     </div>

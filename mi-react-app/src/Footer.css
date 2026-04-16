@@ -5,6 +5,9 @@
     font-family: Arial, sans-serif;
 }
 
+.footer-section img {
+    height: 70px;
+}
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -17,7 +20,7 @@
 
 .footer-top h2 {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: bold;
     margin: 0;
     letter-spacing: 1px;
 }
@@ -26,11 +29,11 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    /* Línea divisoria superior */
     padding: 40px 0;
 }
 
 .locations-block {
+    text-align: center;
     flex: 1;
 }
 
@@ -43,7 +46,7 @@
 
 .block-title {
     font-size: 0.9rem;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 30px;
 }
 
@@ -78,7 +81,7 @@
 
 .info-column h4 {
     font-size: 0.9rem;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
