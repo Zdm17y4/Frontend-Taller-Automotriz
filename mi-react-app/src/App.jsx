@@ -4,6 +4,7 @@ import ServicePage from './pages/public/ServicePage';
 import PlanchadoPinturaPage from './pages/public/PlanchadoPinturaPage';
 import MecanicaPage from './pages/public/MecanicaPage';
 import ElectromovilidadPage from './pages/public/ElectromovilidadPage';
+import LoginPage from './pages/public/LoginPage';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
 
         {/* Ruta principal de Mecánica */}
         <Route path="/servicio/mecanica" element={<MecanicaPage />} />
+
+        {/* Ruta de Login */}
+        <Route path="/login" element={<LoginPage />} />
 
         {/* Rutas explícitas para sub-servicios de Mecánica */}
         <Route path="/servicio/inspeccion-y-diagnostico" element={<ServicePage id="inspeccion" />} />
