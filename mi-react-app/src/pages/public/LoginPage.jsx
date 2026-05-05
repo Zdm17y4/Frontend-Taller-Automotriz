@@ -46,7 +46,7 @@ const LoginPage = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">Usuario</label>
             <input
               type="text"
               id="username"
@@ -59,7 +59,7 @@ const LoginPage = () => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Contraseña</label>
             <input
               type="password"
               id="password"
