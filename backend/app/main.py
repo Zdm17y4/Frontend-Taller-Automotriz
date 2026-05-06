@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.database import engine, Base
+import app.models  # Importar modelos para que SQLAlchemy los detecte
 
 Base.metadata.create_all(bind=engine)
 
