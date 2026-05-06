@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.database import engine, Base
-import app.models  # Importar modelos para que SQLAlchemy los detecte
+import app.models
+from app.routers import clientes, catalogos
 
 Base.metadata.create_all(bind=engine)
 
@@ -21,3 +22,6 @@ app.add_middleware(
 @app.get("/")
 def read_root():
     return {"message": "Bienvenido a la API del Taller Automotriz"}
+
+app.include_router(catalogos.router, prefix="/api/catalogos", tags=["Catálogos"])
+app.include_router(clientes.router, prefix="/api/clientes", tags=["Clientes"])

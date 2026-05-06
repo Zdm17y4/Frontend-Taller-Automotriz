@@ -20,7 +20,6 @@ class PersonaOut(PersonaBase):
     id: int
     created_at: datetime
     
-    # Anidamos los catálogos para que el frontend reciba la descripción, no solo el ID
     tipo_documento: TipoDocumentoOut
     sexo: SexoOut
     
