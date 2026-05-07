@@ -1,7 +1,7 @@
 import React from "react";
-import pintura from './assets/images/pintura.png'
-import planchado from './assets/images/planchado.png'
-import atencion from './assets/images/atencion.png'
+import pintura from '../../assets/images/pintura.png'
+import planchado from '../../assets/images/planchado.png'
+import atencion from '../../assets/images/atencion.png'
 import './ValueProps.css'
 const ValueProps = () => {
     return (

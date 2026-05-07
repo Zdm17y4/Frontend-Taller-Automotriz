@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import localitation from './assets/icon/localitation.png'
-import crane from './assets/icon/crane.png'
+import localitation from '../../assets/icon/localitation.png'
+import crane from '../../assets/icon/crane.png'
 const Footer = () => {
     return (
         <footer className="footer-section">
