@@ -66,14 +66,11 @@ const Navbar = () => {
                     </li>
 
                     <li className="nav-item">
-                        <button>LOCALES</button>
+                        <button onClick={(e) => handleNavigate('/servicio/locales', e)}>LOCALES</button>
                         <ul className="dropdown">
-                            <li><button>LOCALES PREMIUM</button></li>
-                            <li><button>SURQUILLO</button></li>
-                            <li><button>LOCALES MULTIMARCA</button></li>
-                            <li><button>SURQUILLO</button></li>
-                            <li><button>SAN LUIS</button></li>
-                            <li><button>LA MOLINA</button></li>
+                            <li><button onClick={(e) => handleNavigate('/servicio/locales-barranco', e)}>BARRANCO</button></li>
+                            <li><button onClick={(e) => handleNavigate('/servicio/locales-independencia', e)}>INDEPENDENCIA</button></li>
+                            <li><button onClick={(e) => handleNavigate('/servicio/locales-sjl', e)}>SAN JUAN DE LURIGANCHO</button></li>
                         </ul>
                     </li>
                 </ul>
