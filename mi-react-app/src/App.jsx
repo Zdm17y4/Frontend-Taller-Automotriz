@@ -4,6 +4,8 @@ import ServicePage from './pages/public/ServicePage';
 import PlanchadoPinturaPage from './pages/public/PlanchadoPinturaPage';
 import MecanicaPage from './pages/public/MecanicaPage';
 import ElectromovilidadPage from './pages/public/ElectromovilidadPage';
+import LocalesList from './pages/public/LocalesList';
+import LocalDetail from './pages/public/LocalDetail';
 
 function App() {
   return (
@@ -34,6 +36,12 @@ function App() {
         <Route path="/servicio/electricidad-y-electronica" element={<ServicePage id="electricidad" />} />
         <Route path="/servicio/aire-acondicionado" element={<ServicePage id="aire-acondicionado" />} />
         <Route path="/servicio/reparacion-de-motores" element={<ServicePage id="reparacion-motores" />} />
+        
+        {/* Ruta principal de Locales */}
+        <Route path="/servicio/locales" element={<LocalesList />} />
+        <Route path="/servicio/locales-barranco" element={<LocalDetail id="barranco" />} />
+        <Route path="/servicio/locales-independencia" element={<LocalDetail id="independencia" />} />
+        <Route path="/servicio/locales-sjl" element={<LocalDetail id="sjl" />} />
 
       </Routes>
     </BrowserRouter>
