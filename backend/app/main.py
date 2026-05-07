@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.database import engine, Base
 import app.models
-from app.routers import clientes, catalogos
+from app.routers import clientes, catalogos, auth
 
 Base.metadata.create_all(bind=engine)
 
@@ -23,5 +23,6 @@ app.add_middleware(
 def read_root():
     return {"message": "Bienvenido a la API del Taller Automotriz"}
 
+app.include_router(auth.router, prefix="/api/auth", tags=["Autenticación"])
 app.include_router(catalogos.router, prefix="/api/catalogos", tags=["Catálogos"])
 app.include_router(clientes.router, prefix="/api/clientes", tags=["Clientes"])

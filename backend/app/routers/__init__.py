@@ -1,1 +1,1 @@
-from app.routers import clientes, catalogos
+from app.routers import clientes, catalogos, auth
