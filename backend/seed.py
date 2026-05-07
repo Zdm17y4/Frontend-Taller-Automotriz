@@ -43,20 +43,20 @@ def seed_data():
         admin_email = "admin@taller.com"
         if not db.query(Usuario).filter(Usuario.email == admin_email).first():
             print("Creando usuario Administrador...")
-            # Crear la persona admin
-            persona_admin = Persona(
-                tipo_documento_id=1,
-                numero_documento="00000000",
-                nombres="Administrador",
-                apellido_paterno="Sistema",
-                apellido_materno="",
-                sexo_id=1
-            )
-            db.add(persona_admin)
-            db.commit()
-            db.refresh(persona_admin)
+            persona_admin = db.query(Persona).filter(Persona.numero_documento == "00000000").first()
+            if not persona_admin:
+                persona_admin = Persona(
+                    tipo_documento_id=1,
+                    numero_documento="00000000",
+                    nombres="Administrador",
+                    apellido_paterno="Sistema",
+                    apellido_materno="",
+                    sexo_id=1
+                )
+                db.add(persona_admin)
+                db.commit()
+                db.refresh(persona_admin)
 
-            # Crear el usuario admin (Contraseña: admin123)
             usuario_admin = Usuario(
                 email=admin_email,
                 password_hash=get_password_hash("admin123"),
