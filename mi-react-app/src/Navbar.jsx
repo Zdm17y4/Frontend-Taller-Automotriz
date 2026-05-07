@@ -76,6 +76,9 @@ const Navbar = () => {
                             <li><button>LA MOLINA</button></li>
                         </ul>
                     </li>
+                    <li className="nav-item">
+                        <button onClick={(e) => handleNavigate('/login', e)}>LOGIN</button>
+                    </li>
                 </ul>
             </nav>
         </section>
