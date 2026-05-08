@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../../Navbar';
-import Footer from '../../Footer';
-import Whatsapp from '../../Whatsapp';
-import Copyright from '../../Copyright';
+import Navbar from '../../components/public/Navbar';
+import Footer from '../../components/public/Footer';
+import Whatsapp from '../../components/public/Whatsapp';
+import Copyright from '../../components/public/Copyright';
 import './ElectromovilidadPage.css';
 
 import heroImg from '../../assets/images/lamboUrus.png'; 

@@ -1,8 +1,8 @@
 import React from 'react';
-import feature1 from './assets/icon/feature-1.png'
-import feature2 from './assets/icon/feature-2.png'
-import feature3 from './assets/icon/feature-3.png'
-import feature4 from './assets/icon/feature-4.png'
+import feature1 from '../../assets/icon/feature-1.png'
+import feature2 from '../../assets/icon/feature-2.png'
+import feature3 from '../../assets/icon/feature-3.png'
+import feature4 from '../../assets/icon/feature-4.png'
 import './Features.css';
 const Features = () => {
     return (

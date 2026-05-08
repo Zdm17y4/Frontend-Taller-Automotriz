@@ -1,6 +1,6 @@
 import React from "react";
-import logoTaller from './assets/logos/logoTaller.png';
-import logoTallerPremium from './assets/logos/logoTallerPremium.png';
+import logoTaller from '../../assets/logos/logoTaller.png';
+import logoTallerPremium from '../../assets/logos/logoTallerPremium.png';
 
 import './Quality.css'
 

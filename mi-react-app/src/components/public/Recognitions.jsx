@@ -1,7 +1,7 @@
 import React from 'react';
-import porscheLogo from './assets/logos/porsche.png'
-import mercedesbenzLogo from './assets/logos/mercedesbenz.png'
-import bmwLogo from './assets/logos/bmw.png'
+import porscheLogo from '../../assets/logos/porsche.png'
+import mercedesbenzLogo from '../../assets/logos/mercedesbenz.png'
+import bmwLogo from '../../assets/logos/bmw.png'
 import './Recognitions.css'
 
 const Recognitions = () => {
