@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.database import engine, Base
 import app.models
-from app.routers import clientes, catalogos, auth
+from app.routers import clientes, catalogos, auth, ost
 
 Base.metadata.create_all(bind=engine)
 
@@ -26,3 +26,4 @@ def read_root():
 app.include_router(auth.router, prefix="/api/auth", tags=["Autenticación"])
 app.include_router(catalogos.router, prefix="/api/catalogos", tags=["Catálogos"])
 app.include_router(clientes.router, prefix="/api/clientes", tags=["Clientes"])
+app.include_router(ost.router, prefix="/api/ost", tags=["Órdenes de Trabajo"])
