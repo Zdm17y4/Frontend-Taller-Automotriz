@@ -67,6 +67,46 @@ const NuevoClientePage = () => {
     setLoading(true);
     setError('');
 
+    // Validaciones con Regex
+    const selectedTipoDoc = catalogos.tiposDocumento.find(
+      t => t.id === parseInt(formData.tipo_documento_id)
+    );
+    
+    if (selectedTipoDoc && selectedTipoDoc.codigo === 'DNI') {
+      const dniRegex = /^[0-9]{8}$/;
+      if (!dniRegex.test(formData.numero_documento)) {
+        setError('El número de documento para DNI debe contener exactamente 8 dígitos numéricos.');
+        setLoading(false);
+        return;
+      }
+    }
+
+    if (formData.telefono && formData.telefono.trim()) {
+      const telRegex = /^[0-9]{9}$/;
+      if (!telRegex.test(formData.telefono.trim())) {
+        setError('El teléfono debe contener exactamente 9 dígitos numéricos.');
+        setLoading(false);
+        return;
+      }
+    }
+
+    const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
+    if (!nameRegex.test(formData.nombres.trim())) {
+      setError('El campo Nombres solo puede contener letras y espacios.');
+      setLoading(false);
+      return;
+    }
+    if (!nameRegex.test(formData.apellido_paterno.trim())) {
+      setError('El campo Apellido Paterno solo puede contener letras y espacios.');
+      setLoading(false);
+      return;
+    }
+    if (!nameRegex.test(formData.apellido_materno.trim())) {
+      setError('El campo Apellido Materno solo puede contener letras y espacios.');
+      setLoading(false);
+      return;
+    }
+
     try {
       // Transform id strings to numbers
       const payload = {

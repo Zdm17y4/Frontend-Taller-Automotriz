@@ -1,0 +1,250 @@
+.nuevo-ost-page h2 {
+  margin-top: 0;
+  color: #111827;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.flex-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-icon-back {
+  background: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.btn-icon-back:hover {
+  background: #f9fafb;
+  color: #111827;
+  border-color: #9ca3af;
+}
+
+.page-header p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.form-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.section-title {
+  color: #111827;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.client-search-section {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.flex-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.input-search-wrapper {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-input-btn {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-input-btn input {
+  flex: 1;
+}
+
+.btn-search-client {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: #374151;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-search-client:hover {
+  background: #1f2937;
+}
+
+.dropdown-wrapper {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-feedback-box {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-feedback-box.success {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.search-feedback-box.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+.text-success-icon {
+  color: #16a34a;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.third {
+  flex: 1;
+  min-width: 180px;
+}
+
+.form-group.full {
+  flex: 1;
+  width: 100%;
+}
+
+.form-group label {
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.2s;
+  background-color: #fff;
+  color: #111827;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e62020;
+  box-shadow: 0 0 0 2px rgba(230, 32, 32, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.btn-cancel {
+  background: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+  background: #f9fafb;
+  color: #111827;
+}
+
+.btn-save {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e62020;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-save:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+.btn-save:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loading-state {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #6b7280;
+}

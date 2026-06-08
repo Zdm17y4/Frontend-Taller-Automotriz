@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
-import { LayoutDashboard, Users, UserPlus, FileText, LogOut } from 'lucide-react';
+import { LayoutDashboard, Users, UserPlus, FileText, LogOut, BookOpen } from 'lucide-react';
 import './DashboardLayout.css';
 
 const DashboardLayout = () => {
@@ -33,10 +33,14 @@ const DashboardLayout = () => {
             <UserPlus size={20} />
             <span>Nuevo Cliente</span>
           </NavLink>
-          <div className="nav-item disabled">
+          <NavLink to="/dashboard/ost" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>
             <FileText size={20} />
             <span>Órdenes de Trabajo</span>
-          </div>
+          </NavLink>
+          <NavLink to="/dashboard/bitacora" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>
+            <BookOpen size={20} />
+            <span>Bitácora</span>
+          </NavLink>
         </nav>
         <div className="sidebar-footer">
           <button className="logout-button" onClick={handleLogout}>

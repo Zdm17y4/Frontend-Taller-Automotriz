@@ -1,0 +1,154 @@
+.nuevo-bitacora-page h2 {
+  margin-top: 0;
+  color: #111827;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.flex-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-icon-back {
+  background: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.btn-icon-back:hover {
+  background: #f9fafb;
+  color: #111827;
+  border-color: #9ca3af;
+}
+
+.page-header p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.form-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.section-title {
+  color: #111827;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  flex: 1;
+  width: 100%;
+}
+
+.form-group label {
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.2s;
+  background-color: #fff;
+  color: #111827;
+  resize: vertical;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e62020;
+  box-shadow: 0 0 0 2px rgba(230, 32, 32, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.btn-cancel {
+  background: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+  background: #f9fafb;
+  color: #111827;
+}
+
+.btn-save {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e62020;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-save:hover:not(:disabled) {
+  background: #dc2626;
+}
+
+.btn-save:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

@@ -17,6 +17,12 @@ import DashboardLayout from './layouts/DashboardLayout';
 import DashboardHome from './pages/private/DashboardHome';
 import ClientesPage from './pages/private/ClientesPage';
 import NuevoClientePage from './pages/private/NuevoClientePage';
+import EditarClientePage from './pages/private/EditarClientePage';
+import OSTPage from './pages/private/OSTPage';
+import NuevoOSTPage from './pages/private/NuevoOSTPage';
+import OSTDetailPage from './pages/private/OSTDetailPage';
+import BitacoraPage from './pages/private/BitacoraPage';
+import NuevoBitacoraPage from './pages/private/NuevoBitacoraPage';
 
 function App() {
   return (
@@ -69,6 +75,12 @@ function App() {
               <Route path="/dashboard" element={<DashboardHome />} />
               <Route path="/dashboard/clientes" element={<ClientesPage />} />
               <Route path="/dashboard/clientes/nuevo" element={<NuevoClientePage />} />
+              <Route path="/dashboard/clientes/editar/:id" element={<EditarClientePage />} />
+              <Route path="/dashboard/ost" element={<OSTPage />} />
+              <Route path="/dashboard/ost/nuevo" element={<NuevoOSTPage />} />
+              <Route path="/dashboard/ost/:id" element={<OSTDetailPage />} />
+              <Route path="/dashboard/bitacora" element={<BitacoraPage />} />
+              <Route path="/dashboard/bitacora/nuevo" element={<NuevoBitacoraPage />} />
             </Route>
           </Route>
 

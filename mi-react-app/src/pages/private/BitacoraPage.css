@@ -1,0 +1,40 @@
+.bitacora-page h2 {
+  margin-top: 0;
+  color: #111827;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header p {
+  color: #6b7280;
+  margin: 0;
+}
+
+.cell-wrap {
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.text-muted {
+  color: #6b7280;
+}
+
+.font-medium {
+  font-weight: 500;
+  color: #111827;
+}
+
+.loading-state, .empty-state {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #6b7280;
+}
