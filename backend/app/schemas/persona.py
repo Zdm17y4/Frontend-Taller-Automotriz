@@ -16,14 +16,6 @@ class PersonaBase(BaseModel):
 class PersonaCreate(PersonaBase):
     pass
 
-class PersonaUpdate(BaseModel):
-    nombres: Optional[str] = None
-    apellido_paterno: Optional[str] = None
-    apellido_materno: Optional[str] = None
-    direccion: Optional[str] = None
-    telefono: Optional[str] = None
-    sexo_id: Optional[int] = None
-
 class PersonaOut(PersonaBase):
     id: int
     created_at: datetime

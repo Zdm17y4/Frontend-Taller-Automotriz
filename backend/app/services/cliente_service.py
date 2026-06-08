@@ -2,7 +2,7 @@ from sqlalchemy.orm import Session
 from fastapi import HTTPException
 from app.models.persona import Persona
 from app.models.cliente import Cliente
-from app.schemas.persona import PersonaCreate, PersonaUpdate
+from app.schemas.persona import PersonaCreate
 
 def obtener_clientes(db: Session, skip: int = 0, limit: int = 100):
     return db.query(Cliente).offset(skip).limit(limit).all()
@@ -37,20 +37,3 @@ def crear_cliente(db: Session, persona_data: PersonaCreate):
     db.refresh(nuevo_cliente)
 
     return nuevo_cliente
-
-def actualizar_cliente(db: Session, cliente_id: int, persona_data: PersonaUpdate):
-    """Actualiza los datos de la Persona asociada a un Cliente. Solo modifica los campos provistos en el payload."""
-    cliente = db.query(Cliente).filter(Cliente.id == cliente_id).first()
-    if not cliente:
-        raise HTTPException(status_code=404, detail="Cliente no encontrado")
-
-    persona = db.query(Persona).filter(Persona.id == cliente.persona_id).first()
-
-    campos_a_actualizar = persona_data.model_dump(exclude_unset=True)
-    for campo, valor in campos_a_actualizar.items():
-        setattr(persona, campo, valor)
-
-    db.commit()
-    db.refresh(cliente)
-    return cliente
-
