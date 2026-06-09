@@ -12,10 +12,11 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError('');
-    setIsLoading(true);
+  e.preventDefault();
+  setError('');
+  setIsLoading(true);
 
+  try {
     const result = await login(email, password);
 
     if (result.success) {
@@ -24,7 +25,11 @@ const Login = () => {
       setError(result.error);
       setIsLoading(false);
     }
-  };
+  } catch (error) {
+    setError('Error del servidor');
+    setIsLoading(false);
+  }
+};
 
   return (
     <div className="login-container">
