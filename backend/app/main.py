@@ -4,7 +4,7 @@ from app.core.database import engine, Base
 import app.models
 from app.routers import clientes, catalogos, auth, ost, bitacora
 
-Base.metadata.create_all(bind=engine)
+# Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="API Taller Automotriz",
