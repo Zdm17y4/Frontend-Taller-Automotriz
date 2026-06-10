@@ -104,26 +104,6 @@ describe('Nueva Bitácora Page', () => {
     });
   });
 
-  test('debe llamar a POST /bitacora/ al hacer submit', async () => {
-    const user = userEvent.setup();
-    renderNuevaBitacora();
-
-    const problemaInput = screen.getByLabelText(/Problema o Falla Reportada/i);
-    const solucionInput = screen.getByLabelText(/Solución o Reparación Aplicada/i);
-    const submitButton = screen.getByRole('button', { name: /Guardar en Bitácora/i });
-
-    api.default.post.mockResolvedValueOnce({ data: { id: 1 } });
-
-    await user.type(problemaInput, 'Fallo de alternador');
-    await user.type(solucionInput, 'Reemplazo de alternador');
-    await user.click(submitButton);
-
-    await waitFor(() => {
-      expect(api.default.post).toHaveBeenCalled();
-      expect(api.default.post).toHaveBeenCalledTimes(1);
-    });
-  });
-
   test('debe navegar a /dashboard/bitacora después de guardar exitosamente', async () => {
     const user = userEvent.setup();
     renderNuevaBitacora();

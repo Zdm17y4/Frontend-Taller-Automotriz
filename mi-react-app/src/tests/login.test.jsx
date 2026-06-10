@@ -155,7 +155,6 @@ describe('Login Page', () => {
   });
 
   test('debe navegar a dashboard después de login exitoso', async () => {
-
     const user = userEvent.setup();
     renderLogin();
 
